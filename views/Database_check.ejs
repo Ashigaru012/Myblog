@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>SAMPLE</title>
+  </head>
+  <body>
+      <ul>
+        <% post.forEach((item) => { %>
+          <li>
+            <div>
+              <span><%= item.title %></span>
+              <span><%= item.content %></span>
+            </div>
+          </li>
+        <% }) %>
+      </ul>
+  </body>
+</html>

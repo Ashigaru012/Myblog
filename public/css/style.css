@@ -1,0 +1,172 @@
+body{
+    background-color:#666666;
+    width:1000px;
+    height:auto;
+    margin-right: auto;
+    margin-left : auto;
+    display: flex;
+    flex-flow: column;
+    min-height: 100vh;
+    
+}
+
+li{
+    list-style:none;
+}
+.header{
+    background-image: url("/images/test.jpg");
+    background-repeat:  no-repeat; 
+    width:1000px;
+    height:270px;
+    margin-top:0px;
+    padding-top:0px;
+    
+    }
+
+.title-name{
+    color:#FFFFFF;
+    float:left;
+    font-size:30px;
+    font-family:"ＭＳ 明朝";
+    padding-left:20px;
+    
+    
+}
+
+.header-list li{
+    
+    color:#FFFFFF;
+    font-size:20px;
+    float:left;
+    padding-top:50px;
+    float:right;
+    padding-right:20px;
+    padding-left:20px;
+    
+}
+
+.header-sentence{
+    color:#FFFFFF;
+    font-size:22px;
+    padding-left:20px;
+    padding-top:20px;
+    clear:both;
+
+}
+
+.main{
+    height:auto;
+    min-height: 100vh;
+    position: relative;/*←相対位置*/
+    padding-bottom: 120px;
+    box-sizing: border-box;
+}
+
+.main-left{
+    width:20%;
+    height:auto;
+    float:left;
+}
+
+
+.profile{
+    width:200px;
+    background-color: #FFFFFF;
+    box-shadow: 2px 2px 4px;
+}
+.cardTitle-profile{
+    color:#FFFFFF;
+    background-color:#090C2A;
+    padding-left:50px;
+}
+
+.side-profile span{
+    font-size:10px;
+}
+
+.recent-article{
+    width:200px;
+    background-color:#FFFFFF;
+    box-shadow: 2px 2px 4px;
+}
+
+.cardTitle-recent_article{
+    color:#FFFFFF;
+    background-color:#090C2A;
+    padding-left:60px;
+}
+
+.cate{
+    width:200px;
+    background-color: #FFFFFF;
+    box-shadow: 2px 2px 4px;
+}
+
+.cardTitle-cate{
+    color:#FFFFFF;
+    background-color:#090C2A;
+    padding-left:60px;
+}
+
+.content{
+    
+    float:left;
+    width:80%;
+    position: relative;
+    left:50px;
+
+    
+    
+    
+}
+
+
+
+.blog{
+    
+    background-color: #FFFFFF;
+    box-shadow: 2px 2px 4px;
+    width:730px;
+    position: relative;
+}
+
+.blog h1{
+    font-size:15px;
+    padding-left:20px;
+}
+
+.title{
+    padding-left:20px;
+    
+   
+}
+
+.text{
+    padding-left:20px;
+    padding-bottom:50px;
+}
+
+.posted{
+    position: absolute;
+
+    bottom: 0;
+
+    left:55%;
+
+    margin: 0;
+
+    padding: 0;
+
+}
+
+
+footer{
+    background-color:#000000;
+    width: 1000px;
+    color: #fff;
+    text-align: center;
+    padding: 10px 30px 0px 0px;
+    position: absolute;/*←絶対位置*/
+    bottom: 0; /*下に固定*/
+}
+
