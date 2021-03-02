@@ -54,6 +54,15 @@ app.get('/', (req, res) => {
   );
 });
 
-
+app.get('article/:id',(req,res) =>{
+  const id = req.params.id;
+  connection.query(
+    'SELECT * FROM post WHERE id =?',
+    [id],
+    (error,results) =>{
+      res.render('article.ejs');
+    }
+  );
+});
 
 app.listen(3000);
