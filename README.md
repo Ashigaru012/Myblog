@@ -1,2 +1,2 @@
 # Myblog
-ブログ作るよ！
+Node.js + expressでブログ作るよ！
