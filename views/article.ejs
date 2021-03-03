@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>R氏のブログ</title>
+        <link rel="stylesheet" href="/css/style.css">
+    </head>
+
+    <body>
+        <div class="header">
+
+            <div class="title-name"><h1>R制作処</h1></div>
+            <div class="header-list">
+                    <ul>
+                        <li><a>お問い合わせ</a></li>
+                        <li><a>Link</a></li>
+                        <li><a>ダウンロード</a></li>
+                        <li><a href="/index">トップページ</a></li>
+                    </ul>
+            </div>
+            
+            <div class="header-sentence">作成中のゲームやプログラムの進捗をここに上げるブログです</div>
+            
+        </div> 
+
+        <div class="main">
+            <div class="main-left">
+                <div class="profile">
+                    <p class="cardTitle-profile">プロフィール</p>
+                    
+                    <div class="side-profile">
+                        名前:あーる<br>
+                        趣味:ゲームとプログラミング<br>
+                        TwitterID:<span>@R_R_R_R_R012</span><br>
+                        
+                    </div>
+
+                </div>
+
+                <div class="recent-article">
+                    <p class="cardTitle-recent_article">最新記事</p>
+
+                    <div class="side-recent_article">
+                        (01/01)はじめに<br>
+                    </div>
+                </div>
+
+                <div class="cate">
+                    <p class="cardTitle-cate">カテゴリ</p>
+
+                    <div class="side-cate">
+                        ゲーム<br>
+                        日記<br>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content">
+                <div class="blog">
+                    <h1 class="date"><%= post.createdtime%></h1>
+
+                    <div class="blogbody">
+                        <h2 class="title"><a href="/article/<%= post.id%>"><%= post.title%></a></h2>
+                        <div class="text">
+                            <%-post.content%>
+                        </div>
+
+                        <div class="posted">
+                            posted by R at <%= post.createdtime%>
+                        </div>
+
+                    </div>
+                </div>
+        </div>
+
+
+        <footer>
+            <p>(c)copy right</p>
+        </footer>
+
+    </body>
+</html>
