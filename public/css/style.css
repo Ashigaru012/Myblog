@@ -169,4 +169,29 @@ footer{
     position: absolute;/*←絶対位置*/
     bottom: 0; /*下に固定*/
 }
+.comment{
+    position: relative;
+    margin-bottom: 50px;
+}
 
+h3{
+    height: 10px;
+    width: 70%;
+    font-size: 17px;
+    
+
+}
+
+.comment_text{
+    width: 72%;
+    margin-top:20px;
+    padding-bottom: 30px;
+
+}
+
+.comment_createdtime{
+    font-size: 12px;
+    margin-right:70px;
+    float: right;
+
+}

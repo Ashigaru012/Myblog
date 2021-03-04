@@ -13,7 +13,7 @@
             <div class="header-list">
                     <ul>
                         <li><a>お問い合わせ</a></li>
-                        <li><a>Link</a></li>
+                        <li><a href="/write">投稿へ</a></li>
                         <li><a>ダウンロード</a></li>
                         <li><a href="/index">トップページ</a></li>
                     </ul>
@@ -71,8 +71,47 @@
 
                     </div>
                 </div>
-        </div>
 
+                <h3>この記事へのコメント</h3>
+
+                <div class="comment">
+                
+                
+                    <div class="comment_text">ゆっくちお疲れ様です</div>
+                    <div class="comment_createdtime">posted by R at 2021年03月03日18時19分</div>
+                </div>
+                <h4>コメントを書く</h4>
+                <form action="" method="POST">
+                    <table>
+                        <tr>
+                            <!-- 記事のタイトルを入力する欄 -->
+                            <th>Title</th>
+                            <td>
+                                <input type="text" class="title-input" name="title" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <!-- 記事の内容を入力する欄 -->
+                            <th>Content</th>
+                            <td>
+                                <textarea name="content"></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <!-- 記事の投稿ボタン -->
+                            <th></th>
+                            <td>
+                                <button type="submit">投稿</button>
+                            </td>
+                        </tr>
+                </table>
+                </form>
+            </div>
+
+
+            
+
+        </div>
 
         <footer>
             <p>(c)copy right</p>
