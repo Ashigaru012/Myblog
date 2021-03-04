@@ -168,6 +168,7 @@ footer{
     padding: 10px 30px 0px 0px;
     position: absolute;/*←絶対位置*/
     bottom: 0; /*下に固定*/
+    margin-top: auto;
 }
 .comment{
     position: relative;
@@ -194,4 +195,9 @@ h3{
     margin-right:70px;
     float: right;
 
+}
+
+textarea{
+    height: 150px;
+    width: 300px;
 }
