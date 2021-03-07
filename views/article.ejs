@@ -77,32 +77,26 @@
 
                 <div class="comment">
                 
-                
-                    <div class="comment_text">ゆっくちお疲れ様です</div>
-                    <div class="comment_createdtime">posted by at 2021年03月03日18時19分</div>
+                <% for(let i = 0; i < comments.length; i++){%>
+                    <div class="comment_text"><%= comments[i].comment%></div>
+                    <div class="comment_createdtime">posted by at <%=comments[i].createdtime%></div>
+                    <% };%>
                 </div>
 
                 <h4>コメントを書く</h4>
 
-                <form action="" method="POST">
+                <form action="/comment_create" method="POST">
+                    <input type="hidden" name="id" value="<%= post.id%>">
                     <table>
                         <tr>
-                            <!-- 記事のタイトルを入力する欄 -->
-                            <th>Title</th>
+                            <!-- コメントの内容を入力する欄 -->
+                            
                             <td>
-                                <input type="text" class="title-input" name="title" />
+                                <textarea name="comment"></textarea>
                             </td>
                         </tr>
                         <tr>
-                            <!-- 記事の内容を入力する欄 -->
-                            <th>Comment</th>
-                            <td>
-                                <textarea name="content"></textarea>
-                            </td>
-                        </tr>
-                        <tr>
-                            <!-- 記事の投稿ボタン -->
-                            <th></th>
+                            <!-- コメントの投稿ボタン -->
                             <td>
                                 <button type="submit">投稿</button>
                             </td>
