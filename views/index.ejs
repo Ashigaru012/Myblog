@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>R氏のブログ</title>
+        <title>R制作処</title>
         <link rel="stylesheet" href="/css/style.css">
     </head>
 
@@ -13,9 +13,13 @@
             <div class="header-list">
                     <ul>
                         <li><a>お問い合わせ</a></li>
-                        <li><a href="/write">投稿へ</a></li>
+                        <% if(locals.isLoggedIn){ %>
+                        <li><a href="/write">投稿</a></li>
+                        <% } else { %>
+                            <li><a href="/login">投稿(ログイン画面へ)</a></li>
+                            <% }; %>
                         <li><a>ダウンロード</a></li>
-                        <li><a href="/index">トップページ</a></li>
+                        <li>トップページ</li>
                     </ul>
             </div>
             
@@ -32,6 +36,7 @@
                         名前:あーる<br>
                         趣味:ゲームとプログラミング<br>
                         TwitterID:<span>@</span><br>
+                        GithubID:<a href="https://github.com/Ashigaru012">Ashigaru012</a>
                         
                     </div>
 
@@ -56,7 +61,7 @@
             </div>
 
             <div class="content">
-                <% for(let i = 0; i < 3; i++){%>
+                <% for(let i = 0; i < post.length; i++){%>
                 <div class="blog">
                     <h1 class="date"><%= post[i].createdtime%></h1>
 
@@ -73,7 +78,25 @@
                     </div>
                 </div>
                 <% }%>
-            <div class="IndexNumber"><123...></123...></div>
+            <div class="IndexNumber">
+                <% const data_num = data.length / 3;%>
+                <% const data_ceil_num = Math.ceil(data_num);%>
+                <% console.log(data_ceil_num);%>
+                <ul>
+                    <li><</li>
+                <% for(let i = 1; i <= data_ceil_num; i++){%>
+                <%      if(now_pg == i){ %>
+                            <li><%= i%></li>
+                        <%}%>
+                <%      if(now_pg != i){ %>
+                            <li><a href="/index/<%= i%>"><%= i %></a></li>
+                        <%}%>
+                        
+                        
+                <%};%>
+                    <li>></li>
+                </ul>
+            </div>
         </div>
 
 

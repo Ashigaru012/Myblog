@@ -2,7 +2,13 @@ const express = require('express');
 const router = express.Router();
 const mysql = require('mysql');
 require('date-utils');
-router.get('/', (req, res, next) => res.render('write'));
+const bcrypt = require('bcrypt');
+
+router.get('/', (req, res, next) => {
+    console.log(res.locals.username);
+    res.render('write')
+
+});
 
 
 const connection = mysql.createConnection({
@@ -21,7 +27,7 @@ router.post('/',(req,res,next) => {
         'insert into post (title, content, createdtime) values (?, ?, ?)',
         [title,content,createdtime],
         (error,results) =>{
-            res.redirect('/index');
+            res.redirect('/index/1');
         }
     );
 

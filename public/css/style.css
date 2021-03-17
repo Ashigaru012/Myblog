@@ -1,5 +1,5 @@
 body{
-    background-color:#666666;
+    background-color:#808080;
     width:1000px;
     height:auto;
     margin-right: auto;
@@ -70,6 +70,7 @@ li{
 
 
 .profile{
+    
     width:200px;
     background-color: #FFFFFF;
     box-shadow: 2px 2px 4px;
@@ -185,8 +186,10 @@ h3{
 
 .comment_text{
     width: 72%;
+    height: auto;
     margin-top:20px;
     padding-bottom: 30px;
+    white-space: pre-wrap;
 
 }
 
@@ -205,3 +208,21 @@ textarea{
 .IndexNumber{
     text-align: center;
 }
+.IndexNumber ul{
+    text-align: center;
+}
+
+.IndexNumber li{
+    display: inline;
+    font-size: 18px;
+    
+    margin:0 1px;
+}
+
+a{
+    color: #3333ff;
+    text-decoration: none;
+}
+
+
+
