@@ -1,7 +1,7 @@
 {
   "name": "list-app",
   "version": "1.0.0",
-  "description": "",
+  "description": "Node.js + expressでブログ作るよ！",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -22,5 +22,14 @@
     "knex": "^0.95.1",
     "mysql": "^2.18.1",
     "mysql2": "^2.2.5"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ashigaru012/Myblog.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Ashigaru012/Myblog/issues"
+  },
+  "homepage": "https://github.com/Ashigaru012/Myblog#readme"
 }
