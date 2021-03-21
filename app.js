@@ -27,8 +27,8 @@ app.set('view engine', 'ejs');
 
 const connection = mysql.createConnection({
   host: '160.251.21.15',
-  user: 'root',
-  password: 'Gcc337733',
+  user: 'R',
+  password: 'Gcc#337733',
   database: 'MyBlog'
 });
 
