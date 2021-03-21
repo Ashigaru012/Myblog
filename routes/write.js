@@ -12,11 +12,11 @@ router.get('/', (req, res, next) => {
 
 
 const connection = mysql.createConnection({
-    host: 'localhost',
-    user: 'root',
-    password: 'Gcc337733',
-    database: 'MyBlog'
-  });
+  host: '160.251.21.15',
+  user: 'R',
+  password: 'Gcc#337733',
+  database: 'MyBlog'
+});
 
 router.post('/',(req,res,next) => {
     const title = req.body.title;
