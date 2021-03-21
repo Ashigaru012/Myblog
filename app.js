@@ -164,7 +164,7 @@ app.get('/signup',(req,res)=>{
   res.render('signup.ejs');
 });
 
-app.post('/signup',(req,res)=>{
+/*app.post('/signup',(req,res)=>{
   const username = req.body.username;
   const email = req.body.email;
   const password = req.body.password;
@@ -179,6 +179,6 @@ app.post('/signup',(req,res)=>{
       }
     );
   });
-});
+});*/
 
 app.listen(3000);
