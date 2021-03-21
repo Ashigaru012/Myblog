@@ -66,7 +66,6 @@ app.use((req, res, next) => {
 });
 
 app.use('/index',indexRouter);
-app.use('/',indexRouter);
 app.use('/write',writeRouter);
 app.use(express.static('public'));
 

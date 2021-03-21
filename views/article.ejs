@@ -13,7 +13,11 @@
             <div class="header-list">
                     <ul>
                         <li><a>お問い合わせ</a></li>
-                        <li><a href="/write">投稿へ</a></li>
+                        <% if(locals.isLoggedIn){ %>
+                            <li><a href="/write">投稿</a></li>
+                            <% } else { %>
+                                <li><a href="/login">投稿(ログイン画面へ)</a></li>
+                                <% }; %>
                         <li><a>ダウンロード</a></li>
                         <li><a href="/index/1">トップページ</a></li>
                     </ul>
