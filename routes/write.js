@@ -15,7 +15,7 @@ const connection = mysql.createConnection({
   host: '160.251.21.15',
   user: 'R',
   password: 'Gcc#337733',
-  database: 'MyBlog'
+  database: 'myblog'
 });
 
 router.post('/',(req,res,next) => {
