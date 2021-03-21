@@ -26,7 +26,7 @@ app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 
 const connection = mysql.createConnection({
-  host: 'localhost',
+  host: '160.251.21.15',
   user: 'root',
   password: 'Gcc337733',
   database: 'MyBlog'
