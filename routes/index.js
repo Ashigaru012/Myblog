@@ -5,11 +5,11 @@ const session = require('express-session');
 
 
 const connection = mysql.createConnection({
-    host: 'localhost',
-    user: 'root',
-    password: 'Gcc337733',
-    database: 'MyBlog'
-  });
+  host: '160.251.21.15',
+  user: 'R',
+  password: 'Gcc#337733',
+  database: 'MyBlog'
+});
 
   router.use(
     session({
